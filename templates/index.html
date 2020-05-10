@@ -1,0 +1,22 @@
+<form action="/" method="POST">
+
+   Name: <input type="text" id="name" name="name"><br>
+   Age: <input type="text" id="age" name="age"><br>
+   <input type="submit" value="Submit">
+</form>
+
+<table border="1">
+    <tr>
+    <th>ID</th><th>Name</th><th>Age</th><th>Update/Delete</th>
+    </tr>
+    
+        <form action="">
+            {% for value1 in value1 %}
+            <tr><td>ID</td><td>{{ value1.get("Name")}}</td>
+                <td>{{ value1.get("Age")}}</td><td><input type="button" value="Update"><br><input type="button" value="Delete"></td>
+            </tr>
+{% endfor %}    </form>
+    
+        
+    </tr>
+</table>
